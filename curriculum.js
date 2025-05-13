@@ -78,16 +78,70 @@ let isAlive = false;
 
 // 6.0 Logic and Operators
 // -- Operators (+ - / %)
+const sum = 3 + 9;
+
+const division = 12 / 5;
+
+const remainder = 12 % 5;
+
+console.log('SUM:', sum);
+console.log('DIVISION:', division);
+console.log('REMAINDER:', remainder);
+
 // -- Logical operators (|| &&)
+
+
 // -- Type of
+const randomNumber = 101;
+console.log(typeof randomNumber, typeof 'string', typeof true, typeof null, typeof undefined); 
 
 // 7.0 Conditional Statements
 // -- If else
 
+const x = 21
+if (x > 10 && x < 20) {
+    // Whatever code is written here is conditionally executed
+    console.log('The value is greater than 10, and also less than 20');
+} else {
+    console.log('The value is not greater than 10, or it is greater than 20');
+}
+
+if (x > 10 || x < 20) {
+    // Whatever code is written here is conditionally executed
+    console.log('The value is greater than 10, or also less than 20');
+} else {
+    console.log('The value is not greater than 10, or it is greater than 20');
+}
+
 // 8.0 Loops
 // -- While loop
+let i = 0;
+while (i < 20) {
+    console.log('The value of i is:', i);
+    i = i + 1;
+}
+
 // -- For loop
+for (let j = 0; j < 20; j++) {
+    // this is repeateble code
+    console.log('The value of j is:', j);
+}
+
+const animals = ['cat', 'dog', 'fish', 'bird'];
+
+for (let k = 0; k < animals.length; k++) {
+    console.log('The animal at index ' + k + ' is ' + animals[k]);
+}
+
 // -- Continue & break
+for (let k = 0; k < animals.length; k++) {
+    const currentAnimal = animals[k];
+    if (currentAnimal === 'dog') {
+        continue;
+        //break;
+    }
+    console.log('The animal at index ' + k + ' is ' + currentAnimal);
+}
 
 // 9.0 Functions
 // -- Create a function

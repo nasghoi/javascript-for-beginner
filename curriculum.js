@@ -145,7 +145,36 @@ for (let k = 0; k < animals.length; k++) {
 
 // 9.0 Functions
 // -- Create a function
+function printRectangle(y, z) {
+    // This function prints out the rectangle of a number
+    console.log(y * z)
+}
+
 // -- Invoke a function
+printRectangle(5, 5);
+
 // -- Return
+function addStrings(str1, str2) {
+    // This function adds two strings together
+    strings = str1 + str2;
+    if(typeof str1 !== 'string' || typeof str2 !== 'string') {
+        return 'Nothing to show';
+    }
+    return strings;
+}
+const result = addStrings('hello', 'world');
+console.log(result);
 // -- Default inputs
+function addStrings(str1 = 'hello', str2 = 'world') {
+    // This function adds two strings together
+    strings = str1 + str2;
+    if(typeof str1 !== 'string' || typeof str2 !== 'string') {
+        return 'Nothing to show';
+    }
+    return strings;
+}
 // -- Arrow functions
+const arrowFunction = (arg) => {
+    console.log('ARG: ' + arg);
+}
+arrowFunction('oyasumi');
